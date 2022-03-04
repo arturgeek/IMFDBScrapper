@@ -2,12 +2,8 @@
 
 namespace App\Tools;
 
-use Exception;
-use Goutte\Client;
-
-class IMFDBScrapper
+class IMFDBScrapper extends Scrapper
 {
-    private $client;
     const IMFDB_URL = 'http://www.imfdb.org';
     const ACCEPTED_CATEGORIES = [
         "Handguns",
@@ -21,10 +17,6 @@ class IMFDBScrapper
     private $categories = [];
 
     public $request = null;
-
-    function __construct() {
-        $this->client = new Client();
-    }
 
     public function crawlFeaturedArticle()
     {
@@ -137,19 +129,5 @@ class IMFDBScrapper
         {
             $this->categories[$category] = [];
         };
-    }
-
-    private function getNodesFromDom( $selector )
-    {
-        if( $this->request == null )
-        {
-            dd("Crawler not valid");
-        }
-
-        $values = [];
-        $this->request->filter($selector)->each(function ($node) use (&$values) {
-            $values[] = $node;
-        });
-        return $values;
     }
 }
