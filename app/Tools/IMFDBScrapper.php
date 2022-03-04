@@ -86,10 +86,9 @@ class IMFDBScrapper extends Scrapper
         if( in_array($category, self::ACCEPTED_CATEGORIES) )
         {
             $image = $this->getWeaponImage( $parent );
-
             $this->categories[$category][] = [
                 "name" => $weapon,
-                "image" => $image
+                "image_url" => $image
             ];
         }
     }

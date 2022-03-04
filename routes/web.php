@@ -16,5 +16,7 @@ use App\Http\Controllers\MovieController;
 Route::get('/', 'ScrapperController@index');
 
 Route::get('imfdb', 'MovieController@index');
-Route::get('movie-weapons', 'MovieController@getMovieFirearms');
-Route::post('save-to-favorites', 'MovieController@saveWeaponToFavorites');
+Route::get('imfdb/weapons', 'MovieController@getMovieFirearms');
+Route::post('imfdb/save-to-favorites', 'MovieController@saveWeaponToFavorites');
+
+Route::get('mercadolibre');
