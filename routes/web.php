@@ -13,6 +13,8 @@
 
 use App\Http\Controllers\MovieController;
 
-Route::get('/', 'MovieController@index');
+Route::get('/', 'ScrapperController@index');
+
+Route::get('imfdb', 'MovieController@index');
 Route::get('movie-weapons', 'MovieController@getMovieFirearms');
 Route::post('save-to-favorites', 'MovieController@saveWeaponToFavorites');

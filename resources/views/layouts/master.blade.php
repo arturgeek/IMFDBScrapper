@@ -48,15 +48,16 @@
         <main>
 
             <div class="row g-5">
-                <div class="col-md-12">
+                <div class="col-md-12 m-0">
 
                     @section('header')
-                    @show
-
-                    @section('subheader')
                     <h1>
                         @show
                     </h1>
+
+                    @section('subheader')
+                    @show
+
                 </div>
             </div>
 

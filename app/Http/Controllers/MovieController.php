@@ -23,7 +23,7 @@ class MovieController extends Controller
         $featured = $this->scrapper->crawlFeaturedArticle();
 
         $allFavoriteWeapons = Weapon::all()->toArray();
-        return view('welcome', [ "featured" => $featured, "favorites" => $allFavoriteWeapons ]  );
+        return view('imfdb', [ "featured" => $featured, "favorites" => $allFavoriteWeapons ]  );
     }
 
     public function getMovieFirearms(Request $request)
