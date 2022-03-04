@@ -18,7 +18,7 @@
             <a href="/imfdb" class="btn btn-dark">Go to IMFDB tool</a>
             <br/>
             <br/>
-            <a href="/imfdb" class="btn btn-dark">Go to Mercadolibre tool</a>
+            <a href="/mercadolibre" class="btn btn-dark">Go to Mercadolibre tool</a>
         </div>
 
     </div>

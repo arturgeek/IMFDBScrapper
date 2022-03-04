@@ -19,4 +19,4 @@ Route::get('imfdb', 'MovieController@index');
 Route::get('imfdb/weapons', 'MovieController@getMovieFirearms');
 Route::post('imfdb/save-to-favorites', 'MovieController@saveWeaponToFavorites');
 
-Route::get('mercadolibre');
+Route::get('mercadolibre', 'ProductosMercadolibreController@index');
