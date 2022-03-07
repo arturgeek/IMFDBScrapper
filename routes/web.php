@@ -20,3 +20,5 @@ Route::get('imfdb/weapons', 'MovieController@getMovieFirearms');
 Route::post('imfdb/save-to-favorites', 'MovieController@saveWeaponToFavorites');
 
 Route::get('mercadolibre', 'ProductosMercadolibreController@index');
+Route::post('mercadolibre/get-product-data', 'ProductosMercadolibreController@getProductData');
+Route::get('mercadolibre/download-image', 'ProductosMercadolibreController@downloadProductImage');
