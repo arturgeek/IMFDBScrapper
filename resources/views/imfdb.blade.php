@@ -30,7 +30,7 @@
                 <img class="bd-placeholder-img card-img-top" role="img" src="{{ $featured["image_url"] }}" />
                 @endif
                 <div class="card-body">
-                    <a href="{{ url('movie-weapons?movie='.$featured["url"].'') }}">
+                    <a href="{{ url('imfdb/weapons?movie='.$featured["url"].'') }}">
                         Weapons of {{ $featured["name"] }}
                     </a>
                 </div>

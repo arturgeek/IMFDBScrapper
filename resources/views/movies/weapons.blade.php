@@ -9,7 +9,9 @@
 
 @section('subheader')
     @parent
-    Here is the list of weapons fr this movie
+    Here is the list of weapons for this movie
+    <br/>
+    <a href="{{ url('imfdb/') }}">Back</a>
 @stop
 
 @section('content')
